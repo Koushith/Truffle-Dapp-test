@@ -1,4 +1,4 @@
-pragma solidity >=0.5.0 
+pragma solidity >=0.4.21 <0.7.0;
 
 contract Hello {
     //this will hold our gretings text
@@ -14,28 +14,27 @@ contract Hello {
         return greeting;
     }
 
-
-    function setGreeting(string memory _greeting) public {
+    function setGreeting(string _greeting) public {
         // user provided greeting
         greeting = _greeting;
     }
 }
 
-pragma solidity >0.4.24;
+// pragma solidity >0.4.24;
 
-contract HelloWorld {
-    string saySomething;
+// contract HelloWorld {
+//     string saySomething;
 
-    constructor() public {
-        saySomething = "Hello World!";
-    }
+//     constructor() public {
+//         saySomething = "Hello World!";
+//     }
 
-    function speak() public view returns (string itSays) {
-        return saySomething;
-    }
+//     function speak() public view returns (string itSays) {
+//         return saySomething;
+//     }
 
-    function saySomethingElse(string newSaying) public returns (bool success) {
-        saySomething = newSaying;
-        return true;
-    }
-}
+//     function saySomethingElse(string newSaying) public returns (bool success) {
+//         saySomething = newSaying;
+//         return true;
+//     }
+// }
